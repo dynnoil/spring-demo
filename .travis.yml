@@ -1,0 +1,9 @@
+language: java
+os: linux
+jdk:
+  - openjdk8
+  - openjdk11
+cache:
+  directories:
+    - $HOME/.m2
+script: ./mvnw clean install -B -V
